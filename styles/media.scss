@@ -1,0 +1,81 @@
+@use 'var';
+
+@media  screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        &__left {
+            width: 80vw;
+            max-width: 768px;
+            height: 50vh;
+            padding: 8vh 0 5vh 0;
+            display: flex;
+            flex-direction: column;
+            .header {
+                width: 80vw;
+                .nav {
+                    &__links {
+                        width: 35vw;
+                    }
+                }
+            }
+            .main {
+                width: 80vw;
+                padding-top: 25vh;
+                align-items: center;
+                justify-content: flex-start;
+                position: relative;
+                bottom: 0;
+                &__title {
+                    padding-bottom: 3vh;
+                    font-size: var.$s-x-large;
+                }
+                &__text {
+                    padding-bottom: 5vh;
+                    text-align: center;
+                }
+                &__icon {
+                    display: none;
+                }
+            }
+        }
+        &__right {
+            padding: 0;
+            width: 80vw;
+            height: 50vh;
+        }
+    }
+}
+
+@media  screen and (max-width: 320px) {
+    .container {
+        gap: 0;
+        &__left {
+            max-width: 320px;
+            padding: 2vh 0 0 0;
+            .header {
+                .nav {
+                    &__links {
+                        display: none;
+                    }
+                    &__icon {
+                        display: flex;
+                        align-self: center;
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+            .main {
+                padding-top: 17vh;
+                &__title {
+                    font-size: var.$s-large;
+                }
+                &__text {
+                    font-size: var.$s-x-small;
+                    line-height: 18px;
+                }
+            }
+        }
+    }
+}

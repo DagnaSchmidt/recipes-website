@@ -6,7 +6,7 @@
     padding: 0;
     margin: 0;
 }
-a, button {
+a, button, h1 {
     all: unset;
 }
 ul {
@@ -14,7 +14,91 @@ ul {
 }
 body {
     overflow-x: hidden;   //hide width scroll
+    background-color: var.$white-color;
 }
 html {
     scroll-behavior: smooth;
+}
+
+.container {
+    width: 100%;
+    max-width: 1990px;
+    padding: 0 10%;
+    display: flex;
+    gap: 10vw;
+    &__left {
+        width: 30vw;
+        height: 100vh;
+        padding: 8vh 0 10vh 0;
+        position: relative;
+        .header {
+            width: 30vw;
+            .nav {
+                display: flex;
+                justify-content: space-between;
+                &__logo {
+                    font-family: var.$logo-font;
+                    font-size: var.$s-medium;
+                    font-weight: var.$w-normal;
+                    color: var.$text-color;
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+                &__links {
+                    display: flex;
+                    width: 15vw;
+                    justify-content: space-between;
+                }
+                &__item {
+                    font-family: var.$links-text-font;
+                    font-size: var.$s-small;
+                    font-weight: var.$w-normal;
+                    color: var.$text-color;
+                    &:hover {
+                        cursor: pointer;
+                        text-decoration: line-through;
+                        transform: scale(1.1);
+                    }
+                }
+                &__icon {
+                    display: none;
+                }
+            }
+        }
+        .main {
+            width: 30vw;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            position: absolute;
+            bottom: 0;
+            &__title {
+                padding-bottom: 5vh;
+                font-family: var.$main-title-font;
+                font-size: var.$s-xx-large;
+                font-weight: var.$w-medium;
+                color: var.$text-color;
+            }
+            &__text {
+                padding-bottom: 20vh;
+                font-family: var.$links-text-font;
+                font-size: var.$s-normal;
+                font-weight: var.$w-normal;
+                color: var.$text-color;
+                line-height: 33px;
+            }
+            &__icon {
+                font-size: var.$s-medium;
+                width: 2vw;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    &__right {
+        padding: 10vh 0 10vh 0;
+    }
 }

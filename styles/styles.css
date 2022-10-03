@@ -4,7 +4,7 @@
   margin: 0;
 }
 
-a, button {
+a, button, h1 {
   all: unset;
 }
 
@@ -14,8 +14,92 @@ ul {
 
 body {
   overflow-x: hidden;
+  background-color: #fff;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+.container {
+  width: 100%;
+  max-width: 1990px;
+  padding: 0 10%;
+  display: flex;
+  gap: 10vw;
+}
+.container__left {
+  width: 30vw;
+  height: 100vh;
+  padding: 8vh 0 10vh 0;
+  position: relative;
+}
+.container__left .header {
+  width: 30vw;
+}
+.container__left .header .nav {
+  display: flex;
+  justify-content: space-between;
+}
+.container__left .header .nav__logo {
+  font-family: "Baloo 2", cursive;
+  font-size: 24px;
+  font-weight: 400;
+  color: #242635;
+}
+.container__left .header .nav__logo:hover {
+  cursor: pointer;
+}
+.container__left .header .nav__links {
+  display: flex;
+  width: 15vw;
+  justify-content: space-between;
+}
+.container__left .header .nav__item {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #242635;
+}
+.container__left .header .nav__item:hover {
+  cursor: pointer;
+  text-decoration: line-through;
+  transform: scale(1.1);
+}
+.container__left .header .nav__icon {
+  display: none;
+}
+.container__left .main {
+  width: 30vw;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: absolute;
+  bottom: 0;
+}
+.container__left .main__title {
+  padding-bottom: 5vh;
+  font-family: "Poppins", sans-serif;
+  font-size: 90px;
+  font-weight: 500;
+  color: #242635;
+}
+.container__left .main__text {
+  padding-bottom: 20vh;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: #242635;
+  line-height: 33px;
+}
+.container__left .main__icon {
+  font-size: 24px;
+  width: 2vw;
+}
+.container__left .main__icon:hover {
+  cursor: pointer;
+}
+.container__right {
+  padding: 10vh 0 10vh 0;
 }/*# sourceMappingURL=styles.css.map */

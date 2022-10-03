@@ -73,7 +73,7 @@ html {
             flex-direction: column;
             justify-content: flex-end;
             position: absolute;
-            bottom: 0;
+            bottom: 10vh;
             &__title {
                 padding-bottom: 5vh;
                 font-family: var.$main-title-font;
@@ -100,5 +100,8 @@ html {
     }
     &__right {
         padding: 10vh 0 10vh 0;
+        width: 40vw;
+        height: 100vh;
+        object-fit: cover;
     }
 }

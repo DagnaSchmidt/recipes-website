@@ -76,7 +76,7 @@ html {
   flex-direction: column;
   justify-content: flex-end;
   position: absolute;
-  bottom: 0;
+  bottom: 10vh;
 }
 .container__left .main__title {
   padding-bottom: 5vh;
@@ -102,4 +102,8 @@ html {
 }
 .container__right {
   padding: 10vh 0 10vh 0;
+  width: 40vw;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=styles.css.map */

@@ -51,13 +51,26 @@
             .header {
                 .nav {
                     &__links {
-                        display: none;
+                        position: absolute;
+                        //right: 0;
+                        right: -100%;
+                        flex-direction: column;
+                        gap: 5vw;
+                        background-color: var.$white-color;
+                        padding: 5vw 40vw 5vw 5vw;
                     }
                     &__icon {
                         display: flex;
                         align-self: center;
                         &:hover {
                             cursor: pointer;
+                        }
+                        &__close {
+                            position: absolute;
+                            display: flex;
+                            padding: 1vw 5vw 0 0;
+                            //right: 0;
+                            right: -100%;
                         }
                     }
                 }

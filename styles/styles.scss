@@ -20,6 +20,11 @@ html {
     scroll-behavior: smooth;
 }
 
+//class for show / hide menu // 
+.show {
+    right: 0 !important;
+}
+
 .container {
     width: 100%;
     max-width: 1990px;
@@ -57,13 +62,14 @@ html {
                     font-size: var.$s-small;
                     font-weight: var.$w-normal;
                     color: var.$text-color;
+                    transition: 0.3s;
                     &:hover {
                         cursor: pointer;
                         text-decoration: line-through;
                         transform: scale(1.1);
                     }
                 }
-                &__icon {
+                &__icon, &__icon__close {
                     display: none;
                 }
             }

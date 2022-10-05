@@ -21,6 +21,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.show {
+  right: 0 !important;
+}
+
 .container {
   width: 100%;
   max-width: 1990px;
@@ -62,13 +66,14 @@ html {
   font-size: 16px;
   font-weight: 400;
   color: #242635;
+  transition: 0.3s;
 }
 .container__left .header .nav__item:hover {
   cursor: pointer;
   text-decoration: line-through;
   transform: scale(1.1);
 }
-.container__left .header .nav__icon {
+.container__left .header .nav__icon, .container__left .header .nav__icon__close {
   display: none;
 }
 .container__left .main {

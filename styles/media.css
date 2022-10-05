@@ -46,7 +46,12 @@
     padding: 2vh 0 0 0;
   }
   .container__left .header .nav__links {
-    display: none;
+    position: absolute;
+    right: -100%;
+    flex-direction: column;
+    gap: 5vw;
+    background-color: #fff;
+    padding: 5vw 40vw 5vw 5vw;
   }
   .container__left .header .nav__icon {
     display: flex;
@@ -54,6 +59,12 @@
   }
   .container__left .header .nav__icon:hover {
     cursor: pointer;
+  }
+  .container__left .header .nav__icon__close {
+    position: absolute;
+    display: flex;
+    padding: 1vw 5vw 0 0;
+    right: -100%;
   }
   .container__left .main__title {
     font-size: 36px;

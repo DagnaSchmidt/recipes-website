@@ -32,7 +32,9 @@ html {
   width: 30vw;
   height: 100vh;
   padding: 8vh 0 10vh 0;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .container__left .header {
   width: 30vw;
@@ -75,8 +77,6 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  position: absolute;
-  bottom: 10vh;
 }
 .container__left .main__title {
   padding-bottom: 5vh;

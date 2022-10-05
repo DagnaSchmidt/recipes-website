@@ -1,14 +1,14 @@
 @media screen and (max-width: 768px) {
   .container {
     flex-direction: column;
+    gap: 0;
   }
   .container__left {
     width: 80vw;
     max-width: 768px;
     height: 50vh;
-    padding: 8vh 0 5vh 0;
-    display: flex;
-    flex-direction: column;
+    padding: 8vh 0 0 0;
+    align-content: space-between;
   }
   .container__left .header {
     width: 80vw;
@@ -18,11 +18,7 @@
   }
   .container__left .main {
     width: 80vw;
-    padding-top: 25vh;
     align-items: center;
-    justify-content: flex-start;
-    position: relative;
-    bottom: 0;
   }
   .container__left .main__title {
     padding-bottom: 3vh;
@@ -58,9 +54,6 @@
   }
   .container__left .header .nav__icon:hover {
     cursor: pointer;
-  }
-  .container__left .main {
-    padding-top: 17vh;
   }
   .container__left .main__title {
     font-size: 36px;

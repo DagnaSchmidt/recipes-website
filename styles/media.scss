@@ -3,13 +3,13 @@
 @media  screen and (max-width: 768px) {
     .container {
         flex-direction: column;
+        gap: 0;
         &__left {
             width: 80vw;
             max-width: 768px;
             height: 50vh;
-            padding: 8vh 0 5vh 0;
-            display: flex;
-            flex-direction: column;
+            padding: 8vh 0 0 0;
+            align-content: space-between;
             .header {
                 width: 80vw;
                 .nav {
@@ -20,11 +20,7 @@
             }
             .main {
                 width: 80vw;
-                padding-top: 25vh;
                 align-items: center;
-                justify-content: flex-start;
-                position: relative;
-                bottom: 0;
                 &__title {
                     padding-bottom: 3vh;
                     font-size: var.$s-x-large;
@@ -67,7 +63,6 @@
                 }
             }
             .main {
-                padding-top: 17vh;
                 &__title {
                     font-size: var.$s-large;
                 }

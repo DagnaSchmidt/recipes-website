@@ -30,7 +30,9 @@ html {
         width: 30vw;
         height: 100vh;
         padding: 8vh 0 10vh 0;
-        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         .header {
             width: 30vw;
             .nav {
@@ -72,8 +74,6 @@ html {
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
-            position: absolute;
-            bottom: 10vh;
             &__title {
                 padding-bottom: 5vh;
                 font-family: var.$main-title-font;
